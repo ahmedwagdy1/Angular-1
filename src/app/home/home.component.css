@@ -1,0 +1,12 @@
+section{
+    height: 95vh;
+    background-color: #1abc9c;
+}
+.logo{
+    width: 250px;
+}
+.li{
+    width: 100px;
+    height: 5px;
+    background-color: white;
+}
