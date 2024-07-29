@@ -1,0 +1,101 @@
+
+
+
+<section class="pt-5">
+    <div class="container pt-5 mx-auto">
+
+
+        <div class="titel position-relative py-2">
+            <h1 class="text-center fw-bolder position-relative pt-3 mb-1">PORTFOLIO COMPONENT</h1>
+            <div class="lins position-absolute d-flex justify-content-center align-items-center w-100">
+                <div class="li"></div>
+                <i class="fa-solid fa-star px-3"></i>
+                <div class="li"></div>
+            </div>
+        </div>
+
+        <div class="row py-5 text-white">
+           @for (P of prodacts; track $index) {
+            <div class="col-md-3 px-1 text-center">
+                <div class="bg">
+                    <img src={{P.image}} class="w-100" alt="">
+                    <h2>{{P.name}}</h2>
+                    <span>{{P.price}}</span>
+                    <p class="pb-2">{{P.categ}}</p>
+                </div>
+            </div>
+           }
+           @for (P of prodacts; track $index) {
+            <div class="col-md-3 px-1 text-center">
+                <div class="bg">
+                    <img src={{P.image}} class="w-100" alt="">
+                    <h2>{{P.name}}</h2>
+                    <span>{{P.price}}</span>
+                    <p class="pb-2">{{P.categ}}</p>
+                </div>
+            </div>
+           }
+           @for (P of prodacts; track $index) {
+            <div class="col-md-3 px-1 text-center">
+                <div class="bg">
+                    <img src={{P.image}} class="w-100" alt="">
+                    <h2>{{P.name}}</h2>
+                    <span>{{P.price}}</span>
+                    <p class="pb-2">{{P.categ}}</p>
+                </div>
+            </div>
+           }
+           @for (P of prodacts; track $index) {
+            <div class="col-md-3 px-1 text-center">
+                <div class="bg">
+                    <img src={{P.image}} class="w-100" alt="">
+                    <h2>{{P.name}}</h2>
+                    <span>{{P.price}}</span>
+                    <p class="pb-2">{{P.categ}}</p>
+                </div>
+            </div>
+           }
+           @for (P of prodacts; track $index) {
+            <div class="col-md-3 px-1 text-center">
+                <div class="bg">
+                    <img src={{P.image}} class="w-100" alt="">
+                    <h2>{{P.name}}</h2>
+                    <span>{{P.price}}</span>
+                    <p class="pb-2">{{P.categ}}</p>
+                </div>
+            </div>
+           }
+           @for (P of prodacts; track $index) {
+            <div class="col-md-3 px-1 text-center">
+                <div class="bg">
+                    <img src={{P.image}} class="w-100" alt="">
+                    <h2>{{P.name}}</h2>
+                    <span>{{P.price}}</span>
+                    <p class="pb-2">{{P.categ}}</p>
+                </div>
+            </div>
+           }
+           @for (P of prodacts; track $index) {
+            <div class="col-md-3 px-1 text-center">
+                <div class="bg">
+                    <img src={{P.image}} class="w-100" alt="">
+                    <h2>{{P.name}}</h2>
+                    <span>{{P.price}}</span>
+                    <p class="pb-2">{{P.categ}}</p>
+                </div>
+            </div>
+           }
+        </div>
+    </div>
+
+
+<p #lazy class="enter text-center fs-5 fw-bolder">show more....</p>
+@defer ( on interaction(lazy) ) {
+    <app-lazylodaing></app-lazylodaing>
+}
+@placeholder {
+    <h1 class="text-center bg-danger">Click Show More to view more products.</h1>
+}
+
+
+</section>

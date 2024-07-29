@@ -4,6 +4,7 @@ import { AboutComponent } from './about/about.component';
 import { PortfoioComponent } from './portfoio/portfoio.component';
 import { ContactComponent } from './contact/contact.component';
 import { NotfondComponent } from './notfond/notfond.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
     export const routes: Routes = [
         {path : '' , redirectTo : 'home', pathMatch : 'full'},
@@ -11,6 +12,7 @@ import { NotfondComponent } from './notfond/notfond.component';
         {path : 'about' , component : AboutComponent},
         {path : 'portfolio' , component : PortfoioComponent},
         {path : 'contact' , component : ContactComponent},
+        {path : 'gallery' , component : GalleryComponent},
         {path : "**" , component : NotfondComponent}
     ];
 
